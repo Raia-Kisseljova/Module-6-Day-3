@@ -11,10 +11,10 @@ const sequelize = new Sequelize(PGDATABASE, PGUSERNAME, PGPASSWORD, {
 const testConnection = async () => {
   try {
     sequelize.authenticate().then(() => {
-      console.log("All good");
+      console.log("All good ( 🦄 ) from testing connection");
     });
   } catch (error) {
-    console.log(error);
+    console.log("🐼🐼🐼", error);
   }
 };
 

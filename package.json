@@ -15,10 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Koulinn/NetflixBackend-Bench-M5/issues"
-  },
-  "homepage": "https://github.com/Koulinn/NetflixBackend-Bench-M5#readme",
+  "homepage": "",
   "dependencies": {
     "axios": "^0.21.1",
     "cloudinary": "^1.26.3",
