@@ -1,6 +1,7 @@
 import express from "express";
 
 import Category from "../db/models/Category.js";
+import Product from "../db/models/Product.js";
 
 const categoryRouter = express.Router();
 
@@ -8,7 +9,7 @@ categoryRouter
   .route("/")
   .get(async (req, res, next) => {
     try {
-      const data = await Category.findAll();
+      const data = await Category.findAll({ include: Product });
       res.send(data);
     } catch (error) {
       console.log(error);
